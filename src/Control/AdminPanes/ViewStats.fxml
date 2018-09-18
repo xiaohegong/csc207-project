@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="-4.0" layoutY="-2.0" prefHeight="69.0" prefWidth="1050.0">
+            <children>
+                <Text lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operating Details"
+                      textAlignment="CENTER" translateX="20.0" wrappingWidth="466.74330139160156">
+                    <font>
+                        <Font name="Futura Condensed ExtraBold" size="50.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets top="5.0"/>
+                    </HBox.margin>
+                </Text>
+                <HBox/>
+            </children>
+        </HBox>
+        <LineChart fx:id="revenueGraph" layoutX="85.0" layoutY="270.0" prefHeight="348.0" prefWidth="411.0"
+                   style="-fx-border-color: #45931f;">
+            <xAxis>
+                <CategoryAxis label="Date" prefHeight="68.0" prefWidth="329.0" side="BOTTOM" translateY="-5.0"
+                              fx:id="xAxis">
+                    <tickLabelFont>
+                        <Font name="Futura Medium" size="14.0"/>
+                    </tickLabelFont>
+                </CategoryAxis>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Revenue" side="LEFT"/>
+            </yAxis>
+        </LineChart>
+        <ChoiceBox fx:id="transitSys" layoutX="255.0" layoutY="87.0" prefWidth="150.0"
+                   style="-fx-border-color: #45931f;"/>
+        <Text fontSmoothingType="LCD" layoutX="84.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="View Stats for" underline="true" wrappingWidth="203.61410522460938">
+            <font>
+                <Font name="Futura Medium" size="24.0"/>
+            </font>
+        </Text>
+        <ScrollPane fx:id="scrollPane" layoutX="564.0" layoutY="201.0" prefHeight="417.0" prefWidth="398.0"
+                    style="-fx-border-color: #45931f;">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="436.0"
+                            prefWidth="411.0" translateX="-10.0" translateY="-10.0">
+                    <children>
+                        <Text fx:id="displayedStats" layoutX="45.0" layoutY="46.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0" wrappingWidth="321.21875">
+                            <font>
+                                <Font name="Futura Medium" size="15.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <ToggleButton fx:id="fourWeeks" layoutX="79.0" layoutY="206.0" mnemonicParsing="false" prefHeight="43.0"
+                      prefWidth="141.0" style="-fx-background-color: white;" text="Last 4 weeks" textFill="#45931f">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="duration"/>
+            </toggleGroup>
+        </ToggleButton>
+        <ToggleButton fx:id="threeMonths" layoutX="220.0" layoutY="206.0" mnemonicParsing="false" prefHeight="43.0"
+                      prefWidth="141.0" style="-fx-background-color: white;" text="Last 3 months" textFill="#45931f"
+                      toggleGroup="$duration">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+        </ToggleButton>
+        <ToggleButton fx:id="oneYear" layoutX="361.0" layoutY="206.0" mnemonicParsing="false" prefHeight="43.0"
+                      prefWidth="141.0" style="-fx-background-color: white;" text="Last 12 months" textFill="#45931f"
+                      toggleGroup="$duration">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+        </ToggleButton>
+        <Text fx:id="hint" layoutX="80.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="416.5298538208008">
+            <font>
+                <Font name="Futura Medium" size="11.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

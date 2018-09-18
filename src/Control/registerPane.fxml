@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<VBox id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text fx:id="back" fill="ghostwhite" text="Back" translateX="-550" translateY="-30">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </Text>
+        <HBox alignment="CENTER">
+            <children>
+                <ImageView fitHeight="89.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                    <image>
+                        <Image url="@Resources/icon.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="logo1" fitHeight="121.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Resources/logo.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+
+        <VBox alignment="CENTER" spacing="30" translateY="1.0">
+            <children>
+                <TextField fx:id="nameInput" promptText="Name" styleClass="textfield" translateY="1.0">
+                    <font>
+                        <Font name="Futura Medium" size="13.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="emailInput" promptText="Email" styleClass="textfield" translateY="1.0">
+                    <font>
+                        <Font name="Futura Medium" size="13.0"/>
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordInput" promptText="Password" styleClass="textfield" translateY="1.0">
+                    <font>
+                        <Font name="Futura Medium" size="13.0"/>
+                    </font>
+                </PasswordField>
+                <HBox alignment="CENTER" spacing="15" translateY="1.0">
+                    <children>
+                        <ToggleButton fx:id="isAdmin" minWidth="100" text="Admin">
+                            <font>
+                                <Font name="Futura Medium" size="13.0"/>
+                            </font>
+                            <toggleGroup>
+                                <ToggleGroup fx:id="group"/>
+                            </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton id="isCardholder" minWidth="100" text="Cardholder" toggleGroup="$group">
+                            <font>
+                                <Font name="Futura Medium" size="13.0"/>
+                            </font>
+                        </ToggleButton>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <HBox alignment="CENTER" translateY="1.0">
+            <children>
+                <Button fx:id="register" style="-fx-background-color: #ffffff;" text="Register" textFill="#45931f"
+                        translateY="1.0">
+                    <font>
+                        <Font name="Futura Medium" size="16.0"/>
+                    </font>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="80" translateY="1.0">
+            <children>
+                <Text fill="ghostwhite">Copyright® 2018 Voyageur. All Rights Reserved.
+                    <font>
+                        <Font name="Futura Medium" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <Text fx:id="time" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER"
+              wrappingWidth="180.21875">
+            <font>
+                <Font name="Futura Condensed Medium" size="14.0"/>
+            </font>
+        </Text>
+    </children>
+
+    <stylesheets>
+        <URL value="@registerPane.css"/>
+    </stylesheets>
+
+</VBox>

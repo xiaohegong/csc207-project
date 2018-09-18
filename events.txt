@@ -1,0 +1,36 @@
+User CSC207@cs.toronto.edu add card
+Admin im.prof@cs.toronto.edu add TTC
+31 15:44 TTC St George Station entry Card 1
+31 16:50 TTC Bloor-Yonge Station exit Card 1
+31 17:10 TTC Sherbourne stop entry Card 1
+31 18:00 TTC Finch station exit Card 1
+31 18:00 TTC Kennedy stop exit Card 1
+User CSC207@cs.toronto.edu check balance
+Card 1 add balance $10
+User CSC207@cs.toronto.edu check balance
+31 16:44 TTC St George Station entry Card 1
+31 17:15 TTC Bloor-Yonge Station exit Card 1
+User CSC207@cs.toronto.edu view recent trips
+User CSC207@cs.toronto.edu track average cost
+User CSC207@cs.toronto.edu check balance
+User CSC207@cs.toronto.edu add card
+User CSC207@cs.toronto.edu view trips
+User CSC207@cs.toronto.edu suspend card 1
+User CSC207@cs.toronto.edu view trips
+CLOSEDAY
+32 15:15 TTC St George Station entry Card 1
+32 15:16 TTC St George Station entry Card 2
+32 15:16 TTC St George Station exit Card 2
+32 15:20 TTC Union Station entry Card 2
+CLOSEDAY
+User CSC207@cs.toronto.edu view recent 1 trips
+35 15:20 TTC Kennedy Stop entry Card 2
+User steve.williams@cs.toronto.edu add card
+CLOSEDAY
+User CSC207@cs.toronto.edu track average cost
+40 08:00 TTC Sheppard West station entry Card 3
+Card 3 add balance $25
+Card 3 add balance $50
+Admin im.prof@cs.toronto.edu view daily report
+CLOSEDAY
+Admin im.prof@cs.toronto.edu view daily report

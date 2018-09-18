@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="-4.0" layoutY="-2.0" prefHeight="69.0" prefWidth="1050.0">
+            <children>
+                <HBox/>
+            </children>
+        </HBox>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e3e3" height="500.0" layoutX="57.0" layoutY="130.0"
+                   stroke="WHITE" strokeType="INSIDE" width="900.0"/>
+        <Text layoutX="57.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings"
+              wrappingWidth="444.5520935058594">
+            <font>
+                <Font name="Futura Condensed ExtraBold" size="60.0"/>
+            </font>
+        </Text>
+        <Text layoutX="90.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set name:" underline="true"
+              wrappingWidth="166.0714111328125">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <Text layoutX="89.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set password:"
+              underline="true" wrappingWidth="191.88543701171875">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <Text layoutX="89.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password:"
+              underline="true" wrappingWidth="198.73715209960938">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="nameInput" layoutX="297.0" layoutY="168.0" prefHeight="29.0" prefWidth="390.0"/>
+
+        <Button fx:id="submit" layoutX="575.0" layoutY="361.0" prefHeight="38" prefWidth="100"
+                style="-fx-background-color: white; -fx-border-color: #45931f;" text="Submit">
+            <font>
+                <Font name="Futura Medium" size="16.0"/>
+            </font>
+        </Button>
+        <PasswordField fx:id="passwordInput" layoutX="297.0" layoutY="230.0" prefHeight="29.0" prefWidth="390.0"/>
+        <Line endX="740.0" layoutX="206.0" layoutY="422.0" startX="-140.0" stroke="#45931f" strokeWidth="3.0"/>
+        <Text layoutX="96.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Would you like to pre-authorize autoload?" underline="true" wrappingWidth="578.9662170410156">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <Text layoutX="94.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Please enter the minimum balance:" wrappingWidth="470.5160217285156">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="minAmount" layoutX="577.0" layoutY="510.0" prefHeight="29.0" prefWidth="90.0"/>
+        <Text layoutX="502.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAD $"
+              wrappingWidth="76.5328369140625">
+            <font>
+                <Font name="Futura Medium" size="18.0"/>
+            </font>
+        </Text>
+        <Text layoutX="95.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="If any of your card balances fall below this amount, we will reload your card with $10."
+              wrappingWidth="858.6539611816406">
+            <font>
+                <Font name="Futura Medium" size="18.0"/>
+            </font>
+        </Text>
+        <Button fx:id="autoloadConfirm" layoutX="703.0" layoutY="504.0" mnemonicParsing="false" prefHeight="37.0"
+                prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: #45931f;" text="Confirm">
+            <font>
+                <Font name="Futura Medium" size="16.0"/>
+            </font>
+        </Button>
+        <Text layoutX="94.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="This saves you the trouble of unable to travel due to insufficient funds."
+              wrappingWidth="773.6539611816406">
+            <font>
+                <Font name="Futura Medium" size="18.0"/>
+            </font>
+        </Text>
+        <PasswordField fx:id="passwordConfirm" layoutX="297.0" layoutY="300.0" prefHeight="29.0" prefWidth="390.0"/>
+    </children>
+</AnchorPane>

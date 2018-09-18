@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<VBox id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <HBox alignment="CENTER">
+            <children>
+                <ImageView fitHeight="89.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                    <image>
+                        <Image url="@Resources/icon.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="logo" fitHeight="121.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Resources/logo.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+
+        <VBox alignment="CENTER" spacing="30.0" translateY="5.0">
+            <children>
+                <TextField fx:id="emailInput" promptText="Email" styleClass="textfield" translateY="20.0">
+                    <font>
+                        <Font name="Futura Medium" size="14.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="passwordInput" promptText="Password" styleClass="textfield" translateY="20.0">
+                    <font>
+                        <Font name="Futura Medium" size="14.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </PasswordField>
+                <ImageView fx:id="login" fitHeight="40" fitWidth="40" translateY="30.0">
+                    <image>
+                        <Image url="@/Control/Resources/login_icon.png"/>
+                    </image>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </ImageView>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </VBox>
+
+        <HBox alignment="CENTER" translateY="30.0">
+            <children>
+                <Text fx:id="register" styleClass="hoverText" text="New to here? Register">
+                    <font>
+                        <Font name="Futura Medium" size="13.0"/>
+                    </font>
+                </Text>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </HBox>
+
+        <HBox alignment="CENTER" translateY="30.0">
+            <children>
+                <Text fx:id="tempUser" styleClass="hoverText" text="Purchase Tokens">
+                    <font>
+                        <Font name="Futura Medium" size="13.0"/>
+                    </font>
+                </Text>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="80" translateY="30.0">
+            <children>
+                <!--<Text fx:id="french" styleClass="language" >Français</Text>-->
+                <!--<Text fx:id="english" styleClass="language" >English</Text>-->
+                <!--<Text fx:id="chinese" styleClass="language" >中文</Text>-->
+                <Text fill="ghostwhite">Copyright® 2018 Voyageur. All Rights Reserved.
+                    <font>
+                        <Font name="Futura Medium" size="12.0"/>
+                    </font>
+                </Text>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </HBox>
+        <Text fx:id="time" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" translateY="18.0"
+              wrappingWidth="180.21875">
+            <font>
+                <Font name="Futura Condensed Medium" size="18.0"/>
+            </font>
+        </Text>
+    </children>
+
+    <stylesheets>
+        <URL value="@mainPage.css"/>
+    </stylesheets>
+
+</VBox>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Add a Transit System under your management" underline="true" wrappingWidth="691.6217956542969">
+            <font>
+                <Font name="Futura Medium" size="26.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="enteredTSName" layoutX="82.0" layoutY="403.0" prefHeight="37.0" prefWidth="301.0"
+                   promptText="Transit System Name" style="-fx-border-color: #45931f;">
+            <font>
+                <Font name="Futura Medium" size="17.0"/>
+            </font>
+        </TextField>
+        <Text layoutX="57.0" layoutY="91.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Manage Transit Systems" wrappingWidth="679.7433013916016">
+            <font>
+                <Font name="Futura Medium" size="60.0"/>
+            </font>
+        </Text>
+        <Button fx:id="addButton" layoutX="429.0" layoutY="398.0" mnemonicParsing="false" prefHeight="42.0"
+                prefWidth="129.0" style="-fx-border-color: #45931f;" text="Confirm">
+            <font>
+                <Font name="Futura Medium" size="22.0"/>
+            </font>
+        </Button>
+        <Text layoutX="74.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="This will add an existing Transit System under your management. " wrappingWidth="767.1648254394531">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

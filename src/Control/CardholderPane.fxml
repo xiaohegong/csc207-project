@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<GridPane id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@CardholderPane.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+
+        <!-- Left Menu sidebar-->
+        <VBox id="left" GridPane.rowSpan="2">
+            <children>
+                <VBox prefHeight="49.0" prefWidth="170.0">
+                    <children>
+                        <Text fx:id="logOut" fill="WHITE" text="Log Out" textAlignment="CENTER"
+                              wrappingWidth="148.18891525268555">
+                            <font>
+                                <Font name="Futura Medium" size="24.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets left="9.0" top="10.0"/>
+                            </VBox.margin>
+                        </Text>
+                    </children>
+                </VBox>
+
+                <VBox prefHeight="650">
+                    <children>
+                        <VBox prefHeight="650.0" prefWidth="158.0">
+                            <children>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" stroke="WHITE"
+                                           strokeType="OUTSIDE" width="180.0"/>
+                                <HBox prefHeight="77.0" prefWidth="210.0" style="-fx-background-color: #45931f;">
+                                    <children>
+                                        <Text fx:id="manageCards" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="Manage Cards" textAlignment="CENTER"
+                                              wrappingWidth="169.70643615722656">
+                                            <font>
+                                                <Font name="Futura Medium" size="22.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="25.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="77.0" prefWidth="171.0" style="-fx-background-color: #45931f;">
+                                    <children>
+                                        <Text fx:id="takeTrip" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="Take Trip" textAlignment="CENTER"
+                                              wrappingWidth="169.70643615722656">
+                                            <font>
+                                                <Font name="Futura Medium" size="22.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="25.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="77.0" prefWidth="171.0" style="-fx-background-color: #45931f;">
+                                    <children>
+                                        <Text fx:id="viewTrips" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="View Trips" textAlignment="CENTER"
+                                              wrappingWidth="169.70643615722656">
+                                            <font>
+                                                <Font name="Futura Medium" size="22.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="25.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="77.0" prefWidth="171.0" style="-fx-background-color: #45931f;">
+                                    <children>
+                                        <Text fx:id="trackCost" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="Track Cost" textAlignment="CENTER"
+                                              wrappingWidth="169.70643615722656">
+                                            <font>
+                                                <Font name="Futura Medium" size="22.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="25.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="77.0" prefWidth="171.0" style="-fx-background-color: #45931f;">
+                                    <children>
+                                        <Text fx:id="settings" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="Settings" textAlignment="CENTER" wrappingWidth="169.70643615722656">
+                                            <font>
+                                                <Font name="Futura Medium" size="22.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="25.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="34.0" prefWidth="181.0" translateY="220.0">
+                                    <children>
+                                        <VBox prefHeight="34.0" prefWidth="5.0"/>
+                                        <TextField fx:id="numMinutes" alignment="CENTER" maxHeight="-Infinity"
+                                                   maxWidth="-Infinity" prefHeight="33.0" prefWidth="107.0"
+                                                   promptText="# minutes"
+                                                   style="-fx-background-color: white; -fx-display-caret: false;">
+                                            <font>
+                                                <Font name="Futura Medium" size="13.0"/>
+                                            </font>
+                                            <cursor>
+                                                <Cursor fx:constant="MOVE"/>
+                                            </cursor>
+                                        </TextField>
+                                        <VBox prefHeight="34.0" prefWidth="4.0"/>
+                                        <Button fx:id="skip" mnemonicParsing="false" prefHeight="32.0" prefWidth="62.0"
+                                                style="-fx-background-color: #45931f;" text="Skip" textFill="WHITE">
+                                            <font>
+                                                <Font name="Futura Medium" size="13.0"/>
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <HBox id="settings" prefHeight="64.0" prefWidth="152.0"/>
+                <Text fx:id="time" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER"
+                      translateY="-10.0" wrappingWidth="180.21875">
+                    <font>
+                        <Font name="Futura Condensed Medium" size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+
+
+        <!-- Top menu log out / back button-->
+        <HBox id="top" style="-fx-background-color: #2F7B12;" GridPane.columnIndex="1"/>
+        <SplitPane dividerPositions="0.006259780907668232" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0"/>
+                <Pane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <AnchorPane fx:id="welcomePane" minHeight="0.0" minWidth="0.0" prefHeight="100.0"
+                                    prefWidth="160.0">
+                            <children>
+                                <HBox layoutX="-4.0" layoutY="-2.0" prefHeight="69.0" prefWidth="1050.0">
+                                    <children>
+                                        <HBox/>
+                                    </children>
+                                </HBox>
+                                <Text layoutX="279.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Welcome! " textAlignment="CENTER" wrappingWidth="513.5521240234375">
+                                    <font>
+                                        <Font name="Futura Bold" size="82.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                        <Text fx:id="name" layoutX="198.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              textAlignment="CENTER" wrappingWidth="683.5079650878906">
+                            <font>
+                                <Font name="Futura Medium" size="55.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT"/>
+                    </cursor>
+                    <!--<fx:include fx:id="manageCardsPane" source="/Control/CardholderPanes/ManageCardPane.fxml"/>-->
+                    <!--<fx:include fx:id="settingsPane" source="/Control/CardholderPanes/SettingsPane.fxml"/>-->
+                    <!--<fx:include fx:id="takeTripPane" source="/Control/CardholderPanes/TakeTripPane.fxml" />-->
+                    <!--<fx:include fx:id="viewTripPane" source="/Control/CardholderPanes/ViewTripPane.fxml"/>-->
+                    <!--<fx:include fx:id="trackCostPane" source="/Control/CardholderPanes/TrackCostPane.fxml" />-->
+                </Pane>
+            </items>
+        </SplitPane>
+    </children>
+</GridPane>

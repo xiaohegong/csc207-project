@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e3e3" height="500.0" layoutX="57.0" layoutY="135.0"
+                   stroke="WHITE" strokeType="INSIDE" width="900.0"/>
+        <Text layoutX="57.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track Cost"
+              wrappingWidth="444.5520935058594">
+            <font>
+                <Font name="Futura Condensed ExtraBold" size="60.0"/>
+            </font>
+        </Text>
+        <Text fx:id="costSummary" layoutX="83.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="857.8854064941406">
+            <font>
+                <Font name="Futura Medium" size="19.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

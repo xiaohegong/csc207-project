@@ -1,0 +1,42 @@
+#pane {
+    -fx-alignment: center;
+    -fx-pref-width: 1200;
+    -fx-fill-height: 750;
+}
+
+#left {
+    -fx-pref-width: 150;
+    -fx-pref-height: 750;
+    -fx-background-color: black;
+    -fx-opacity: 0.7;
+    -fx-fill-height: true;
+}
+
+#top {
+    -fx-pref-width: 1050;
+    -fx-pref-height: 50;
+    -fx-background-color: rgb(85, 170, 44);
+    -fx-opacity: 0.9;
+}
+
+#backBox {
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+    -fx-padding: 15 70 0 30;
+    -fx-border-style: solid none solid none;
+    -fx-border-width: 0.5;
+    -fx-border-color: whitesmoke;
+}
+
+#backText {
+    -fx-fill: white;
+}
+
+#settings {
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+    -fx-padding: 10 10 5 110;
+    -fx-border-style: solid none none none;
+    -fx-border-color: whitesmoke;
+    -fx-border-width: 0.5;
+}

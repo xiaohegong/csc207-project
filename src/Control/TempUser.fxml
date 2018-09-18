@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<GridPane id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@TempUser.css"/>
+    </stylesheets>
+
+    <children>
+
+        <!-- Left Menu sidebar-->
+        <VBox id="left" prefWidth="147.0" GridPane.rowSpan="2">
+            <children>
+                <HBox id="backBox" prefWidth="171.0">
+                    <children>
+                        <Text fx:id="backText" text="Back" textAlignment="CENTER">
+                            <font>
+                                <Font name="Futura Medium" size="19.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="28.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+
+                <VBox prefHeight="650.0"/>
+                <Text fx:id="time" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER"
+                      translateY="20.0" wrappingWidth="180.21875">
+                    <font>
+                        <Font name="Futura Condensed Medium" size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+
+
+        <!-- Top menu log out / back button-->
+        <HBox id="top" style="-fx-background-color: #2F7B12;" GridPane.columnIndex="1"/>
+        <SplitPane dividerPositions="0.006259780907668232" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0"/>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <HBox layoutX="-4.0" layoutY="-2.0" prefHeight="69.0" prefWidth="1050.0">
+                            <children>
+                                <HBox/>
+                            </children>
+                        </HBox>
+                        <ChoiceBox fx:id="transitSystem" layoutX="502.0" layoutY="252.0" prefHeight="27.0"
+                                   prefWidth="203.0" style="-fx-background-color: #ffffff;"/>
+                        <Text layoutX="233.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Transit System" textAlignment="CENTER" wrappingWidth="167.21878051757812">
+                            <font>
+                                <Font name="Futura Medium" size="20.0"/>
+                            </font>
+                        </Text>
+                        <Text layoutX="217.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Route"
+                              textAlignment="CENTER" wrappingWidth="167.21878051757812">
+                            <font>
+                                <Font name="Futura Medium" size="20.0"/>
+                            </font>
+                        </Text>
+                        <Text layoutX="114.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Ride with Tokens" wrappingWidth="470.5520935058594">
+                            <font>
+                                <Font name="Futura Condensed ExtraBold" size="51.0"/>
+                            </font>
+                        </Text>
+                        <ChoiceBox fx:id="startRoute" layoutX="502.0" layoutY="306.0" prefHeight="27.0"
+                                   prefWidth="203.0" style="-fx-background-color: #ffffff;"/>
+                        <Text layoutX="213.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Route"
+                              textAlignment="CENTER" wrappingWidth="167.21878051757812">
+                            <font>
+                                <Font name="Futura Medium" size="20.0"/>
+                            </font>
+                        </Text>
+                        <Text layoutX="223.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Start Station" textAlignment="CENTER" wrappingWidth="167.21878051757812">
+                            <font>
+                                <Font name="Futura Medium" size="20.0"/>
+                            </font>
+                        </Text>
+                        <Text layoutX="218.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Station"
+                              textAlignment="CENTER" wrappingWidth="167.21878051757812">
+                            <font>
+                                <Font name="Futura Medium" size="20.0"/>
+                            </font>
+                        </Text>
+                        <ChoiceBox fx:id="startStation" layoutX="502.0" layoutY="346.0" prefHeight="27.0"
+                                   prefWidth="203.0" style="-fx-background-color: #ffffff;"/>
+                        <ChoiceBox fx:id="endRoute" layoutX="503.0" layoutY="386.0" prefHeight="27.0" prefWidth="203.0"
+                                   style="-fx-background-color: #ffffff;"/>
+                        <ChoiceBox fx:id="endStation" layoutX="502.0" layoutY="426.0" prefHeight="27.0"
+                                   prefWidth="203.0" style="-fx-background-color: #ffffff;"/>
+                        <Button fx:id="purchase" layoutX="440.0" layoutY="515.0" mnemonicParsing="false"
+                                prefHeight="40.0" prefWidth="100.0" text="Purchase"/>
+                        <ToggleButton fx:id="isSubway" layoutX="410.0" layoutY="157.0" mnemonicParsing="false"
+                                      prefHeight="30.0" prefWidth="80.0" text="Subway">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="transit"/>
+                            </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton fx:id="isBus" layoutX="490.0" layoutY="157.0" mnemonicParsing="false"
+                                      prefHeight="30.0" prefWidth="80.0" text="Bus" toggleGroup="$transit"/>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+</GridPane>

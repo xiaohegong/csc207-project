@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="717.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text layoutX="57.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Cards"
+              wrappingWidth="444.5520935058594">
+            <font>
+                <Font name="Futura Condensed ExtraBold" size="60.0"/>
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e3e3" height="515.0" layoutX="57.0" layoutY="130.0"
+                   stroke="WHITE" strokeType="INSIDE" width="915.0"/>
+        <Text layoutX="102.0" layoutY="191.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards"
+              underline="true" wrappingWidth="146.80160522460938">
+            <font>
+                <Font name="Futura Medium" size="32.0"/>
+            </font>
+        </Text>
+        <ScrollPane fx:id="scrollPane" layoutX="92.0" layoutY="213.0" prefHeight="225.0" prefWidth="370.0"
+                    style="-fx-border-color: #45931f;">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="361.0">
+                    <children>
+                        <Text fx:id="cardsInfo" layoutX="10.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              wrappingWidth="302.595703125" y="15.0">
+                            <font>
+                                <Font name="Futura Medium" size="18.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Text layoutX="98.0" layoutY="506.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Card"
+              underline="true" wrappingWidth="240.54061889648438">
+            <font>
+                <Font name="Futura Medium" size="28.0"/>
+            </font>
+        </Text>
+        <RadioButton fx:id="newCard" layoutX="98.0" layoutY="525.0" mnemonicParsing="false" prefHeight="18.0"
+                     prefWidth="175.0" style="-fx-text-fill: #45931f;" text="Reloadable Card">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="radioGroup"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="newDayPass" layoutX="98.0" layoutY="552.0" mnemonicParsing="false" prefHeight="18.0"
+                     prefWidth="175.0" style="-fx-text-fill: #45931f;" text="Day Pass" toggleGroup="$radioGroup">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="newMonthlyPass" layoutX="98.0" layoutY="580.0" mnemonicParsing="false" prefHeight="18.0"
+                     prefWidth="175.0" style="-fx-text-fill: #45931f;" text="Monthly Pass" toggleGroup="$radioGroup">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+        </RadioButton>
+        <Button fx:id="addCard" layoutX="331.0" layoutY="568.0" prefHeight="30" prefWidth="100"
+                style="-fx-border-color: #45931f; -fx-border-width: 2;" text="Add">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </Button>
+
+        <ChoiceBox fx:id="activeCards2" layoutX="630.0" layoutY="531.0" prefHeight="29.0" prefWidth="199.0"
+                   style="-fx-background-color: white; -fx-border-color: #45931f;"/>
+
+        <Text fill="#404040" layoutX="526.0" layoutY="553.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Select card" wrappingWidth="146.8016357421875">
+            <font>
+                <Font name="Futura Condensed Medium" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="523.0" layoutY="509.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Add Balance" underline="true" wrappingWidth="240.54061889648438">
+            <font>
+                <Font name="Futura Medium" size="28.0"/>
+            </font>
+        </Text>
+        <Text fill="#404040" layoutX="559.0" layoutY="605.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Add" wrappingWidth="65.54061889648438">
+            <font>
+                <Font name="Futura Condensed Medium" size="22.0"/>
+            </font>
+        </Text>
+        <Button fx:id="addBalance" layoutX="846.0" layoutY="579.0" prefHeight="30" prefWidth="100"
+                style="-fx-border-color: #45931f; -fx-border-width: 2;" text="Confirm">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </Button>
+        <ToggleButton fx:id="ten" layoutX="636.0" layoutY="581.0" mnemonicParsing="false" prefHeight="27.0"
+                      prefWidth="59.0" text="\$10">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="amount"/>
+            </toggleGroup>
+        </ToggleButton>
+        <ToggleButton fx:id="twenty" layoutX="695.0" layoutY="581.0" mnemonicParsing="false" prefHeight="27.0"
+                      prefWidth="59.0" text="\$20" toggleGroup="$amount">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </ToggleButton>
+        <ToggleButton fx:id="fifty" layoutX="754.0" layoutY="581.0" mnemonicParsing="false" prefHeight="27.0"
+                      prefWidth="59.0" text="\$50" toggleGroup="$amount">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </ToggleButton>
+        <Button fx:id="removeCard" layoutX="848.0" layoutY="223.0" prefHeight="30" prefWidth="100"
+                style="-fx-border-color: #45931f; -fx-border-width: 2;" text="Remove">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="suspendCard" layoutX="848.0" layoutY="327.0" prefHeight="30" prefWidth="100"
+                style="-fx-border-color: #45931f; -fx-border-width: 2;" text="Suspend">
+            <font>
+                <Font name="Futura Medium" size="14.0"/>
+            </font>
+        </Button>
+        <Text fill="#404040" layoutX="526.0" layoutY="247.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Select card" wrappingWidth="140.54061889648438">
+            <font>
+                <Font name="Futura Condensed Medium" size="16.0"/>
+            </font>
+        </Text>
+        <ChoiceBox fx:id="allCards" layoutX="630.0" layoutY="225.0" prefHeight="29.0" prefWidth="199.0"
+                   style="-fx-background-color: white; -fx-border-color: #45931f;"/>
+        <Text layoutX="525.0" layoutY="194.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Remove Card" underline="true" wrappingWidth="356.5406188964844">
+            <font>
+                <Font name="Futura Medium" size="28.0"/>
+            </font>
+        </Text>
+        <Button fx:id="unsuspendCard" layoutX="846.0" layoutY="434.0" prefHeight="30" prefWidth="100"
+                style="-fx-border-color: #45931f; -fx-border-width: 2;" text="Unsuspend">
+            <font>
+                <Font name="Futura Medium" size="13.0"/>
+            </font>
+        </Button>
+        <Text fill="#404040" layoutX="526.0" layoutY="458.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Select card" wrappingWidth="140.54061889648438">
+            <font>
+                <Font name="Futura Condensed Medium" size="16.0"/>
+            </font>
+        </Text>
+        <ChoiceBox fx:id="cardsSuspended" layoutX="630.0" layoutY="436.0" prefHeight="29.0" prefWidth="199.0"
+                   style="-fx-background-color: white; -fx-border-color: #45931f;"/>
+        <Text layoutX="524.0" layoutY="412.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Unsuspend Card" underline="true" wrappingWidth="340.5406188964844">
+            <font>
+                <Font name="Futura Medium" size="28.0"/>
+            </font>
+        </Text>
+        <Text layoutX="525.0" layoutY="298.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Suspend Card" underline="true" wrappingWidth="356.5406188964844">
+            <font>
+                <Font name="Futura Medium" size="28.0"/>
+            </font>
+        </Text>
+        <ChoiceBox fx:id="activeCards" layoutX="630.0" layoutY="329.0" prefHeight="29.0" prefWidth="199.0"
+                   style="-fx-background-color: white; -fx-border-color: #45931f;"/>
+        <Text fill="#404040" layoutX="526.0" layoutY="351.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Select card" wrappingWidth="140.54061889648438">
+            <font>
+                <Font name="Futura Condensed Medium" size="16.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

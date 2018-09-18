@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="700.0"
+            prefWidth="1050.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text layoutX="146.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transit System"
+              textAlignment="CENTER" wrappingWidth="167.21878051757812">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <Text layoutX="57.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take trip"
+              wrappingWidth="444.5520935058594">
+            <font>
+                <Font name="Futura Condensed ExtraBold" size="60.0"/>
+            </font>
+        </Text>
+        <ToggleButton fx:id="tapIn" layoutX="347.0" layoutY="131.0" mnemonicParsing="false" prefHeight="41.0"
+                      prefWidth="158.0" style="-fx-background-color: #ffffff;" text="Tap In" textAlignment="CENTER"
+                      textFill="#45931f">
+            <font>
+                <Font name="Futura Bold" size="20.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup"/>
+            </toggleGroup>
+        </ToggleButton>
+
+        <ToggleButton fx:id="tapOut" layoutX="545.0" layoutY="131.0" mnemonicParsing="false" prefHeight="41.0"
+                      prefWidth="158.0" style="-fx-background-color: #ffffff;" text="Tap Out" textAlignment="CENTER"
+                      textFill="#45931f" toggleGroup="$toggleGroup">
+
+            <font>
+                <Font name="Futura Bold" size="20.0"/>
+            </font>
+        </ToggleButton>
+
+        <Text layoutX="141.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Station"
+              textAlignment="CENTER" wrappingWidth="167.21878051757812">
+
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+
+        <Text layoutX="144.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card" textAlignment="CENTER"
+              wrappingWidth="156.5521240234375">
+
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+
+        <ChoiceBox fx:id="transitSystemsCB" layoutX="351.0" layoutY="199.0" prefWidth="355.0"
+                   style="-fx-background-color: #ffffff;"/>
+        <ChoiceBox fx:id="stationsCB" layoutX="348.0" layoutY="367.0" prefWidth="355.0"
+                   style="-fx-background-color: #ffffff;"/>
+        <ChoiceBox fx:id="cardsCB" layoutX="348.0" layoutY="436.0" prefWidth="355.0"
+                   style="-fx-background-color: #ffffff;"/>
+        <Button fx:id="useCard" layoutX="364.0" layoutY="567.0" mnemonicParsing="false" prefHeight="40.0"
+                prefWidth="125.0" style="-fx-background-color: #45931f; -fx-text-fill: white;" text="Use Card"
+                textAlignment="CENTER" textFill="#45931f">
+
+            <font>
+                <Font name="Futura Bold" size="16.0"/>
+            </font>
+        </Button>
+
+        <ChoiceBox fx:id="passCB" layoutX="347.0" layoutY="503.0" prefWidth="355.0"
+                   style="-fx-background-color: #ffffff;"/>
+        <Text layoutX="143.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pass" textAlignment="CENTER"
+              wrappingWidth="156.5521240234375">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <RadioButton fx:id="subway" layoutX="551.0" layoutY="260.0" mnemonicParsing="false" prefHeight="18.0"
+                     prefWidth="175.0" style="-fx-text-fill: #45931f;" text="Subway">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="tripType"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="bus" layoutX="389.0" layoutY="260.0" mnemonicParsing="false" prefHeight="20.0"
+                     prefWidth="140.0" style="-fx-text-fill: #45931f;" text="Bus" toggleGroup="$tripType">
+            <font>
+                <Font name="Futura Medium" size="15.0"/>
+            </font>
+        </RadioButton>
+        <Text layoutX="132.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select..."
+              textAlignment="CENTER" wrappingWidth="194.21878051757812">
+            <font>
+                <Font name="Futura Medium" size="18.0"/>
+            </font>
+        </Text>
+        <ChoiceBox fx:id="routeCB" layoutX="348.0" layoutY="315.0" prefWidth="355.0"
+                   style="-fx-background-color: #ffffff;"/>
+        <Text layoutX="141.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Route" textAlignment="CENTER"
+              wrappingWidth="167.21878051757812">
+            <font>
+                <Font name="Futura Medium" size="20.0"/>
+            </font>
+        </Text>
+        <Button fx:id="usePass" layoutX="562.0" layoutY="567.0" mnemonicParsing="false" prefHeight="40.0"
+                prefWidth="125.0" style="-fx-background-color: #45931f; -fx-text-fill: white;" text="Use Pass"
+                textAlignment="CENTER" textFill="#45931f">
+            <font>
+                <Font name="Futura Bold" size="16.0"/>
+            </font>
+        </Button>
+
+    </children>
+</AnchorPane>
