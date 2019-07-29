@@ -1,4 +1,4 @@
-# csc207-project
+# Voyageur
  University of Toronto CSC207 course project
 
 
